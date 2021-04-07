@@ -1,0 +1,152 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+}
+
+#left {
+    position: fixed;
+    left: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+#right {
+    position: fixed;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.body-layer {
+    /* width: 900px; */
+    align-content: center;
+}
+
+.body-layer .breadrum {
+    /* width: 900px; */
+    height: 30px;
+    background: #d4d4d4;
+    margin: 0 auto;
+}
+
+.body-layer .breadrum ul li {
+    display: inherit;
+    text-align: center;
+    float: left;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.body-layer .breadrum ul li a {
+    color: blue;
+}
+
+.body-header h3 {
+    color: blue;
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+
+.body-layer {
+    width: 100%;
+}
+
+
+/* .body-layer #main {
+    width: 900px;
+    margin: 0 auto;
+} */
+
+.body-layer .body-border {
+    border: solid 1px black;
+    margin: 0 14% 0 14%;
+}
+
+.body-layer #main .border-main {
+    border: solid 1px black;
+}
+
+.body-main .header h3 {
+    text-align: center;
+    background-color: red;
+    height: 30px;
+}
+
+#tickets {
+    width: 100%;
+}
+
+#tickets th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: deepskyblue;
+    color: white;
+}
+
+#tickets td,
+#tickets th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tickets td a {
+    color: blue;
+    border: blue solid 1px;
+    padding: 2px;
+}
+
+tbody {
+    background-color: bisque;
+}
+
+.detail-inf {
+    background-color: bisque;
+    /* width: 100%; */
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.detail-inf .custom-select select {
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.detail-inf span,
+.radio-inf,
+.date-inf {
+    margin-left: 20px;
+}
+
+.detail-inf .header {
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: solid 3px red;
+}
+
+.btn-sbm {
+    width: 30%;
+    height: 3%;
+    background-color: red;
+    margin: 4% 35% 4% 35%;
+    padding: 2%;
+}
+
+@media screen {
+    #left {
+        width: 10%;
+    }
+    #right {
+        width: 10%;
+    }
+    .body-layer {
+        /* width: 100%; */
+        -ms-flex-align: center;
+    }
+}

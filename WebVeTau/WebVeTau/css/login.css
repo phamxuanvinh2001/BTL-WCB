@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+}
+
+.login h2 {
+    text-align: center;
+}
+
+.border {
+    width: 350px;
+    height: 250px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.border * {
+    padding: 5px;
+    margin: 5px;
+}
+
+.login .border #Uname,
+#passW {
+    width: 300px;
+}
+
+button {
+    width: 315px;
+    font-size: medium;
+    border-style: inset;
+}
