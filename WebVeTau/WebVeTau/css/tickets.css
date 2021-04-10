@@ -1,4 +1,5 @@
 ﻿body {
+
     width: 100%;
     height: 100%;
 }
@@ -6,7 +7,7 @@
 #left {
     position: fixed;
     left: 10px;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     display: block;
 }
@@ -14,9 +15,63 @@
 #right {
     position: fixed;
     right: 10px;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     display: block;
+}
+
+.header{
+    height: 100px;
+}
+.header .logo-header{
+    height: 75px;
+    width: 100%;
+    margin: 0px;
+    display: inline-block;
+    background-color: rgb(1, 102, 235);
+}
+.header .logo-header .logo img{
+    display: inline-block;
+    height: 75px;
+}
+.header .logo-header .login-resign{
+    float: right;
+    padding-top: 55px;
+    padding-right: 10px;
+}
+.header .logo-header .login-resign a{
+    text-decoration: none;
+}
+.header .logo-header .login-resign a:hover{
+    color: white;
+}
+.header .tag-bar{
+    border-radius:  3px;
+    width: 100%;
+    margin-top: 10px;
+}
+.header .tag-bar ul{
+    border-radius: 3px;
+    background-color: rgb(16, 105, 207);
+    list-style: none;
+    margin-top: 0px;
+}
+.header .tag-bar ul li{
+    height: 30px;
+    padding: 0px;
+    display: inline-block;
+}
+.header .tag-bar ul li a.menu{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0px 15px;
+    padding-top: 3px;
+    display: block;
+    text-decoration: none;
+}
+.header .tag-bar ul li:hover{
+    background-color: whitesmoke;
 }
 
 .body-layer {
@@ -29,6 +84,7 @@
     height: 30px;
     background: #d4d4d4;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .body-layer .breadrum ul li {
@@ -52,6 +108,7 @@
 
 .body-layer {
     width: 100%;
+ 
 }
 
 
