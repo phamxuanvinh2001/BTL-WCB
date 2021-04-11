@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tickets.aspx.cs" Inherits="WebVeTau.tickets" %>
 
-<head>
-    <meta charset="utf-8" />
-    <title>page vé tàu</title>
-    <link rel="stylesheet" href="../css/tickets.css" />
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/tickets.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
-
 <body>
     <div id="left">
         <div class="container">
@@ -26,10 +26,10 @@
         <div class="body-border">
             <div class="header">
                 <div class="logo-header">
-                    <a href="" class="logo"><img src="../img/logo.png" alt="" class=""></a>
+                    <a href="" class="logo"><img src="img/logo.png" alt="" class=""></a>
                     <div class="login-resign">
                         <p>
-                            <a href="">Đăng nhâp</a>
+                            <a href="" id="dangnhap">Đăng nhâp</a>
                             /
                             <a href="">Đăng ký</a>
                         </p>
@@ -39,26 +39,26 @@
                 <div class="tag-bar">
                     <ul>
                         <li>
-                            <a href="" class="menu">Trang chủ</a>
-                        </li>
-                        <li>
-                            <a href="" class="menu">Tìm vé</a>
-                        </li>
-                        <li>
-                            <a href="" class="menu">thông tin đặt chỗ</a>
-                        </li>
-                        <li>
-                            <a href="" class="menu">Trả vé</a>
-                        </li>
-                        <li>
-                            <a href="" class="menu">Thông tin các chuyến</a>
-                        </li>
-                        <li>
-                            <a href="" class="menu">Hướng dẫn</a>
-                        </li>
-                        <li>
-                            <a href="" class="menu">Liên hệ</a>
-                        </li>
+                    <a href="Home.aspx" class="menu">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="tickets.aspx" class="menu">Tìm vé</a>
+                </li>
+                <li>
+                    <a href="detailTicket.aspx" class="menu">thông tin đặt chỗ</a>
+                </li>
+                <li>
+                    <a href="detailTicket.aspx" class="menu">Trả vé</a>
+                </li>
+                <li>
+                    <a href="tickets.aspx" class="menu">Thông tin các chuyến</a>
+                </li>
+                <li>
+                    <a href="" class="menu">Hướng dẫn</a>
+                </li>
+                <li>
+                    <a href="" class="menu">Liên hệ</a>
+                </li>
 
                     </ul>
                 </div>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
             </div>
-
+            <form runat="server">
             <div class="detail-inf" id="detail-inf">
                 <h4 class="header">
                     <strong>Thông tin hành trình</strong>
@@ -192,13 +192,12 @@
                             <input type="date" name="date-ve" id="ngayve">
                         </div>
                     </div>
-                    <button type="submit " class="btn-sbm ">Tìm chuyến tàu</button>
+                    <button type="submit " class="btn-sbm" onclick="btn_onclick">Tìm chuyến tàu</button>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </body>
-
-<script src="../js/tickets.js" ></script>
-
+<script src="js/tickets.js"></script>
 </html>

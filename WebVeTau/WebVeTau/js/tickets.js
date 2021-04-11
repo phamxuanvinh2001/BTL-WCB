@@ -1,9 +1,11 @@
-$(function() {
+
+
+$(function () {
     getTickets();
     mydate();
     checkRadio();
     checkSelect();
-});
+ });
 
 function Tickets(maChuyen, gia = [], thoigian) {
     this.maChuyen = maChuyen;
@@ -22,7 +24,7 @@ function getTickets() {
         new Tickets("TN3", ["Ngồi Cứng: liên hệ", "Ngồi Cứng Điều Hòa: 450000 đ", "Ngồi Mềm: liên hệ", "Ngồi Mềm Điều Hòa: 690000 đ", "Nằm Cứng Điều Hòa: 920000 đ", "Nằm Mềm Điều Hòa: 960000 đ"], "06:00am - 15:33pm"),
         new Tickets("TN2", ["Ngồi Cứng: liên hệ", "Ngồi Cứng Điều Hòa: 450000 đ", "Ngồi Mềm: liên hệ", "Ngồi Mềm Điều Hòa: 690000 đ", "Nằm Cứng Điều Hòa: 920000 đ", "Nằm Mềm Điều Hòa: 960000 đ"], "06:00am - 15:33pm")
     ]
-
+    
     fillTicketsToTable(tickets);
 }
 
@@ -40,8 +42,6 @@ function fillGia(item) {
 
 function fillTicketsToTable(tickets) {
     var html = "";
-    var html2 = "";
-    console.log(tickets[0].gia)
     tickets.forEach((data) => {
         html +=
             '<tr>' +

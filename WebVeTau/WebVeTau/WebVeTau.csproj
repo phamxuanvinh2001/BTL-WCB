@@ -67,14 +67,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\detailTicket.css" />
+    <Content Include="css\home.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\register.css" />
     <Content Include="css\tickets.css" />
+    <Content Include="detailTicket.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="html\detailTicket.html" />
+    <Content Include="html\homePage.html" />
     <Content Include="html\loginPage.html" />
     <Content Include="html\RegisterPage.html" />
     <Content Include="html\ticketsPage.html" />
+    <Content Include="js\detailTicket.js" />
+    <Content Include="js\tickets.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="program.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="tickets.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="detailTicket.aspx.cs">
+      <DependentUpon>detailTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detailTicket.aspx.designer.cs">
+      <DependentUpon>detailTicket.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Entity\User.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\loginPage.html.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -87,7 +119,35 @@
     <Compile Include="html\RegisterPage.html.designer.cs">
       <DependentUpon>RegisterPage.html.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="program.aspx.cs">
+      <DependentUpon>program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="program.aspx.designer.cs">
+      <DependentUpon>program.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tickets.aspx.cs">
+      <DependentUpon>tickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tickets.aspx.designer.cs">
+      <DependentUpon>tickets.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -100,7 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="img\" />
-    <Folder Include="js\" />
     <Folder Include="server\" />
   </ItemGroup>
   <PropertyGroup>

@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebVeTau.Login" %>
+
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link href="css/login.css" rel="stylesheet" />
     <script>
         function validateForm() {
             var Uname = document.forms["form1"]["Uname"].value;
@@ -22,9 +23,8 @@
         }
     </script>
 </head>
-
 <body>
-    <div class="login">
+   <div class="login">
         <h2>Login page</h2>
         <div class="border">
             <form id="form1" runat="server" name="from1" onsubmit="return validateForm()" method="POST">
@@ -37,13 +37,13 @@
 
                 <input type="checkbox" name="RmbUser" id="RmbUser">Remember me<br>
 
-                <button type="submit"  runat="server" onserverclick="btnLogin_Click">Login In Here</button><br>
-                <span>Not Registered? <a style="color: blue;" href="RegisterPage.html">Create an account</a></span><br>
+                <button type="submit" runat="server">Login In Here</button>
+                
+                <span>Not Registered? <a style="color: blue;" href="Register.aspx">Create an account</a></span><br>
                 <a style="color: blue;" href="#">Forgot Password?</a>
 
             </form>
         </div>
     </div>
 </body>
-
 </html>

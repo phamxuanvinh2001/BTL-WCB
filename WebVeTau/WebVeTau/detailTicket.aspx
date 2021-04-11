@@ -1,32 +1,35 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="detailTicket.aspx.cs" Inherits="WebVeTau.detailTicket" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/detailTicket.css">
+    <link rel="stylesheet" href="css/detailTicket.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="hearder">
-            <a href="">Đặt Vé Tàu Trực Tuyến</a>
+            <a href="Home.aspx">Đặt Vé Tàu Trực Tuyến</a>
         </div>
         <div class="navigation">
             <ul class="menu menu-nav">
                 <li>
-                    <a href="">Giá vé tàu</a>
+                    <a href="Home.aspx">Giá vé tàu</a>
                 </li>
                 <li>
-                    <a href="">Vé đi miền nam</a>
+                    <a href="tickets.aspx">Vé đi miền nam</a>
                 </li>
                 <li>
-                    <a href="">Vé miền Trung & Bắc</a>
+                    <a href="tickets.aspx">Vé miền Trung & Bắc</a>
                 </li>
                 <li>
-                    <a href="">Danh bạ Ga</a>
+                    <a href="tickets.aspx">Danh bạ Ga</a>
                 </li>
                 <li>
                     <a href="">Khuyến mãi</a>
@@ -838,8 +841,7 @@
             <span>ĐỊA CHỈ: 65 TÂN QUÝ, TÂN PHÚ, TPHCM</span>
         </div>
     </div>
-    <script src="../js/detailTicket.js"></script>
+    <script src="js/detailTicket.js"></script>
 
 </body>
-
 </html>

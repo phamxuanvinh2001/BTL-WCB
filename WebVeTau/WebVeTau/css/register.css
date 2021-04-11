@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../img/hinh-anh-tau-hoa-2.jpg);
+    background-image: url(img/hinh-anh-tau-hoa-2.jpg);
     background-size: cover;
 }
 
@@ -17,6 +17,7 @@ header {
 header #logo {
     margin-top: 10px;
     margin-left: 40px;
+   background-color:aqua;
 }
 
 header label {

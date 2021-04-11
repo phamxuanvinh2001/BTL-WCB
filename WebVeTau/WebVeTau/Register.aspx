@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="WebVeTau.Register" %>
+
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
     <title>Register page</title>
-    <link rel="stylesheet" href="../css/register.css" type="text/css">
+    <link rel="stylesheet" href="css/register.css" type="text/css">
     <script>
         function check() {
             if (document.getElementById('Password').value ==
@@ -65,21 +66,20 @@
     <div class="Register">
         <header>
             <div>
-                <a href="ticketsPage.html"><img src="../img/logo.png" alt="" id="logo"></a>
+                <a href="Home.aspx"><img src="img/logo.png" alt="logo" id="logo" style="background-color:blue""></a>
                 <label for="">ĐĂNG KÝ</label>
             </div>
             <div class="the-link">
-                <a href="loginPage.html">LOGIN</a>
-                <a href="RegisterPage.html"> REGISTER PAGE</a>
+                <a href="Login.aspx">LOGIN</a>
+                <a href="Register.aspx"> REGISTER PAGE</a>
             </div>
 
-
         </header>
-        <form id="form1" runat="server" onsubmit="return validateForm()" method="POST" action="../program.aspx">
+        <form id="form1" runat="server" onsubmit="return validateForm()" method="POST">
             <div class="form-dk">
                 <div class="form-tt">
                     <span>Họ và tên: <span style="color: red;">*</span> </span>
-                    <input type="text" name="fullName" id="fullName" placeholder="Full Name" autocomplete='of' s>
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name" autocomplete='of'>
 
                     <span>CMND: <span style="color: red;">*</span> </span>
                     <input type="text" name="cccd" id="cccd" autocomplete="of" placeholder="Thẻ căn cước">
@@ -99,25 +99,21 @@
 
                     <span>Giới tính <span style="color: red; ">*</span> </span>
                     <span>
-                        <input type="radio" name="rdo-gt" id="rdo-gt-nam" value="Nam" checked>
-                        <label for="rdo-gt-nam" name="rdo-gt">Nam</label>
-                        <input type="radio" name="rdo-gt" id="rdo-gt-nu" value="Nữ">
-                        <label for="rdo-gt-nu" name="rdo-gt">Nữ</label>
+                        <input type="radio" name="rdo-gt" id="rdogtnam" value="Nam" runat="server" checked>
+                        <label for="rdogtnam" name="rdo-gt">Nam</label>
+                        <input type="radio" name="rdo-gt" id="rdogtnu" value="Nữ" runat="server">
+                        <label for="rdogtnu" name="rdo-gt">Nữ</label>
                     </span>
 
                     <span>Ngày tháng năm sinh <span style="color: red; ">*</span> </span>
                     <input type="date" name="myDate" id="myDate">
                 </div>
-                <div id="messageRegister" name="messageRegister" runat="server">
-
-                </div>
 
                 <div class="form-nut">
                     <button type="reset">Reset</button>
-                    <button type="submit " onserverclick="btnRegister_Click">Đăng kí</button>
+                    <button type="submit" runat="server">Đăng kí</button>
                 </div>
 </form>
         </div>
 </body>
-
 </html>

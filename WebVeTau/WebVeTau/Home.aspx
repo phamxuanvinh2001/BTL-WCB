@@ -1,22 +1,29 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebVeTau.Home" %>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Website bán vé tàu</title>
-    <link rel="stylesheet" href="../css/home.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/home.css" rel="stylesheet" />
+
 </head>
-
 <body runat="server">
     <div class="header">
         <div class="logo-header">
             <a href="" class="logo"><img src="../img/logo.png" alt="" class=""></a>
             <div class="login-resign">
                 <p>
-                    <a href="loginPage.html">Đăng Nhập</a>
-                                                
-                    <a href="">Đăng ký</a>
+                
+                    <%if (username == null)  %>
+                    <% { %>
+                    <a href="Login.aspx"> <span id="dapnhap" runat="server"> Đăng Nhập </span></a>   /
+                    <a href="Register.aspx">Đăng ký</a>
+                    <% } else { %>
+                    <span> xin chào  <% =username %> </span>
+                    <span"><a href="Login.aspx" >Logout</a></span>
+                    <% } %>
+
                 </p>
             </div>
             
@@ -25,19 +32,19 @@
         <div class="tag-bar">
             <ul>
                 <li>
-                    <a href="" class="menu">Trang chủ</a>
+                    <a href="Home.aspx" class="menu">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="" class="menu">Tìm vé</a>
+                    <a href="tickets.aspx" class="menu">Tìm vé</a>
                 </li>
                 <li>
-                    <a href="" class="menu">thông tin đặt chỗ</a>
+                    <a href="detailTicket.aspx" class="menu">thông tin đặt chỗ</a>
                 </li>
                 <li>
-                    <a href="" class="menu">Trả vé</a>
+                    <a href="detailTicket.aspx" class="menu">Trả vé</a>
                 </li>
                 <li>
-                    <a href="" class="menu">Thông tin các chuyến</a>
+                    <a href="tickets.aspx" class="menu">Thông tin các chuyến</a>
                 </li>
                 <li>
                     <a href="" class="menu">Hướng dẫn</a>
