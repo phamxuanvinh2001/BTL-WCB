@@ -12,8 +12,8 @@ namespace WebVeTau
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["User"] = null;
             btnLogin_Click();
-
         }
         protected void btnLogin_Click()
         {
@@ -34,7 +34,6 @@ namespace WebVeTau
                 {
                     Session["User"] = user.getFullNam();
                     Response.Redirect("Home.aspx");
-
                 }
             }
            
